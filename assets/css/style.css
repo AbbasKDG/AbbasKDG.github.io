@@ -7,7 +7,9 @@ body {
   background: rgb(241, 240, 240);
 }
 #profile-pic {
-  width: 100;
+  width: 200;
+  display: block;
+  margin: auto;
   margin: 10;
   border-radius: 45%;
   padding: 5;
@@ -27,18 +29,8 @@ body {
 }
 
 .parallax {
-  background-image: url("../images/pexels-photo-209235.jpeg");
-  min-height: 200px;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax2 {
   /* The image used */
-  background-image: url("../images/keys-workshop-mechanic-tools-162553.jpeg");
+  background-image: url("...");
 
   /* Set a specific height */
   min-height: 200px;
@@ -67,13 +59,6 @@ body {
 .dropclass {
   position: relative;
   z-index: 10000;
-}
-
-.footer {
-  text-align: center;
-  color: #eeeeee;
-  background-color: #000000;
-  min-height: 70px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -115,20 +100,17 @@ body {
 
 .facejumbo {
   min-width: 100%;
-  min-width: 100vw;
   min-height: 100%;
   min-height: 100vh;
   background-color: #000000;
-  /* position: relative; */
   color: rgb(21, 52, 5);
   background-image: url("../images/flowers.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
   background-position: center;
 }
 
-.jumbotron {
-  /* display: flex;
+/* .jumbotron { */
+/* display: flex;
   text-overflow: hidden;
   margin: 0px;
   
@@ -136,7 +118,7 @@ body {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   background-size: cover; */
-}
+/* } */
 
 #particles-js {
   background: rgba(0, 10, 14, 0.8);
@@ -184,4 +166,43 @@ a {
   color: #ffffff;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+#navbar {
+  z-index: 999;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#github {
+  border-radius: 200px;
+  width: 30px;
+  margin-right: 3px;
 }

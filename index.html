@@ -9,6 +9,7 @@
       content="abbas, moiz, abbas moiz, data analyst, data, connected systems, web, design, react, developer, portfolio "
     />
     <meta name="author" content="Abbas Moiz" />
+
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
     
@@ -18,6 +19,9 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
   
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -47,60 +51,28 @@
       </script>
       
   </head>
-  <!----------Nav--------->
   <body>
-      <div id="navbar" >
-          <a class="navbar-brand" href="#home" >
-              home
-           </a>
+  <!----------Nav--------->
 
-          <a class="navbar-brand" href="#skills">
-              Skills
-           </a>
-           <a class="navbar-brand" href="#projects">
-              Projects
-             </a>
-             <a class="navbar-brand" href="#about">
-                About
-              </a>
-
-
-              <style>
-              #navbar {
-                z-index:999;
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-              </style>
-              <script>
-                window.onscroll = function() {myFunction()};
+<div id="navbar" class="navbar-expand-lg">
+  <div class="row">
+    <div class="col-md-1 col-sm-3"> <a class="navbar-brand" href="#home">
+        home
+      </a>
+    </div>
+    <div class="col-md-1 col-sm-3"><a class="navbar-brand" href="#skills">
+        Skills
+      </a></div>
+    <div class="col-md-1 col-sm-3"> <a class="navbar-brand" href="#projects">
+        Projects
+      </a></div>
+    <div class="col-md-1 col-sm-3"> <a class="navbar-brand" href="#about">
+        About
+      </a></div>
+  </div>
+</div> 
+<script>
+    window.onscroll = function() {myFunction()};
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
@@ -110,17 +82,17 @@ var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+if (window.pageYOffset >= sticky) {
+navbar.classList.add("sticky")
+} else {
+navbar.classList.remove("sticky");
+}
 }
 
-              </script>
-
-        </div>
+  </script>
       <!----------NAV END--------->
+      
+       
     <!----------Banner--------->
 
     <div id="home" class="facejumbo jumbotron vertical-center">
@@ -131,10 +103,10 @@ function myFunction() {
           <h4 class="subtitle font-weight-light blurb">Data Analyst  |  Web Developer  |  Storyteller </h4>
           <!-- <h5 class="" style="color:rgb(228, 228, 228)">Connected Systems, Digital Transformation and Data As A Service  </h5> -->
           <ul class=" navbar-nav mr-auto ">
-              <li class="nav-item active blurb"><a class="nav-link" href="./assets/docs/BusinessCardDA.png">Business Card </a></li>
-              <li class="nav-item active blurb"><a class="nav-link" href="./assets/docs/abbasmoizresume.pdf" target="_blank">Resume</a></li>
-              <li class="nav-item active blurb"> <a class="nav-link" href="https://www.linkedin.com/in/abbas-moiz-573b8836/" target="_blank">LinkedIn</a></li>
-              <li class="nav-item active blurb"><a class="nav-link" href="https://github.com/AbbasKDG" target="_blank">Github</a></li>
+              <li class="nav-item active "><a class="nav-link" href="./assets/docs/BusinessCardDA.png"><span class="blurb">Business Card</span></a></li>
+              <li class="nav-item active "><a class="nav-link" href="./assets/docs/abbasmoizresume.pdf" target="_blank"><span class="blurb">Resume</span></a></li>
+              <li class="nav-item active "> <a class="nav-link" href="https://www.linkedin.com/in/abbas-moiz-573b8836/" target="_blank"><span class="blurb">LinkedIn</span></a></li>
+              <li class="nav-item active "><a class="nav-link" href="https://github.com/AbbasKDG" target="_blank"><span class="blurb">Github</span></a></li>
           </ul>
         </div>
         
@@ -209,22 +181,29 @@ function myFunction() {
           <img class="counters" src="./assets/images/npm.png" />NPM
         </div>
       </div>
+      <br />
+
+      <div class="row">
+          <div class="col-4 font-italic">
+            <img
+              class="counters"
+              src="./assets/images/matlab.gif"
+            />Matlab
+          </div>
+          <div class="col-4 font-italic">
+            <img class="counters" src="./assets/images/python.png" />Python
+          </div>
+          <div class="col-4 font-italic">
+            <img class="counters" src="./assets/images/django.png" />Django
+          </div>
+        </div>
+
+
+
+      
     </div>
-    <br />
-    <div class="row">
-        <div class="col-4 font-italic">
-          <img
-            class="counters"
-            src="./assets/images/matlab.gif"
-          />Matlab
-        </div>
-        <div class="col-4 font-italic">
-          <img class="counters" src="./assets/images/python.png" />Python
-        </div>
-        <div class="col-4 font-italic">
-          <img class="counters" src="./assets/images/django.png" />Django
-        </div>
-      </div>
+    
+   
     </div>
     <br />
     <br />
@@ -246,19 +225,39 @@ function myFunction() {
       </h2>
       <hr />
       <br />
+      <!---->
+      <!---->
+      <!---->
+
       <div class="card-group">
-        <div class="card">
-          <img class="card-img-top" src="./assets/images/21habits.png" alt="21 Habits">
-          <div class="card-body">
-            <a href="https://twentyonedaysmotivation.herokuapp.com/">
-            <h5 class="card-title">21 Habits</h5></a>
-            <p class="card-text">Habit tracker with social motivation</p>
-            <p class="card-text"><small class="text-muted"></small></p>
+          <div class="card">
+            <img class="card-img-top" src="./assets/images/21habits.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"><a href="https://twentyonedaysmotivation.herokuapp.com/">21 Habits</a> </h5>
+                <p class="card-text">Habit tracker with social motivation</p>
+                <a href="https://github.com/AbbasKDG/Final-Project"><img id="github" src="./assets/images/github.png"></a>
+            </div>
           </div>
-        </div>
-       
-      </div> 
-    </div>
+          <div class="card">
+              <img class="card-img-top" src="./assets/images/instrumentals.png" alt="Card image cap">
+
+              <div class="card-body">
+                  <h5 class="card-title"><a href="./drums.html">Instrumentals</a> </h5>
+                  
+                  <p class="card-text">Portable tool for music players.</p>
+                  <a href="https://github.com/AbbasKDG/Instrumentals"><img id="github" src="./assets/images/github.png"></a>
+
+                </div>
+            </div>
+            
+        </div> 
+
+
+
+
+
+        <br/>
+    
     <br />
 
     
@@ -276,9 +275,13 @@ function myFunction() {
         
       <h2  class="sect text-center font-weight-bold font-italic ">
         About
+        
       </h2>
       <hr />
       <br />
+      <div>
+          <img id="profile-pic" src="./assets/images/abbas.jpeg">
+      </div>
       <div>
         <p>
           Full stack web developer using emergent data driven technologies such
@@ -289,15 +292,28 @@ function myFunction() {
           creative problem solver with a background in computational physics and
           a passion for AI and automation.
         </p>
-        <p>Current Projects: Really getting into MapReduce via Hadoop</p>
-        <p>Current Reads:   </p>
+        <p>When not trying to solve problems with machines</p>
         <ul>
-          <li><p>Learning Python 5th Edition by Mark Lutz</p></li>
-          <li><p>Fluent Python by Luciano Ramalho</p></li>
-          <li><p>And everything I can find on Pep 8 and documentation standards</p></li>
+          <li><p>I pursue my mad passion for photography</p></li>
+          <li><p>Or write poetry and fiction</p></li>
         </ul>
       </div>
     </div>
+<style>
+  .footer {
+
+  text-align: center;
+  color: #eeeeee;
+  background-color: #000000;
+  /* min-height: 70px; */
+}
+</style>
+
+    <footer class="footer text-justify ">
+        <p class="copyright text-center">© Abbas Moiz 2019</p>
+      
+    </footer>
+
     <script>
       ScrollReveal().reveal('.skillbtn', { delay: 250 });
           ScrollReveal().reveal('.projbtn', { delay: 700 });
@@ -310,9 +326,7 @@ function myFunction() {
 
 
   </body>
+  
 
-  <footer class="footer text-justify">
-      <p class="copyright text-center">© Abbas Moiz 2018</p>
-    
-  </footer>
+ 
 </html>
